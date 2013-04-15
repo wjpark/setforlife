@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Set for Life</title>
+	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+	  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+
+	</head>
+	<body class="background">
+		<div id="container">
+			<div id="logo">
+				<a href='/' style="text-decoration:none">
+					<div class="rule_thick"></div>
+					<div id="brand_text">SET FOR LIFE</div>
+					<div class="rule_thick"></div>
+				</a>
+			</div>
+			<div id="welcome">
+				<div id="welcome_msg">living room set</div>
+			</div>
+			<%= yield %>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+<div class="big_plate">
+	<p class="review_new">Write a note for your <%= @product.name %>
+
+	<div id="review_img_big">
+	  <img src="<%= @product.image_url %>" width="250" alt="No picture found"/>
+	</div>	
+
+	<div class="review_details">
+		<%= render 'form' %>	
+		<p>
+		<%= link_to 'Back to products', products_path %>
+		<%# render 'show_cart'%>
+	</div>
+</div>

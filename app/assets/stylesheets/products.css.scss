@@ -1,0 +1,243 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.big_plate {
+	float: left;
+	width: 580px;
+	min-height: 250px;
+	padding: 15px;
+	margin-left: 40px;
+	margin-top: 135px;
+	background-color: white;
+	box-shadow: 0px 3px 2px -1px #c1bfbf;
+}
+
+.big_plate2 {
+	width: 100%;
+	max-width: 615px;
+	min-width: 250px;
+	margin-top: 130px;
+	margin-left: 35px;
+	float: left;
+}
+
+#columns {
+	-moz-column-count: 3;
+  -moz-column-gap: 10px;
+  -moz-column-fill: auto;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 10px;
+  -webkit-column-fill: auto;
+  column-count: 3;
+  column-gap: 15px;
+  column-fill: auto;
+}
+
+.pin { 
+	column-break-inside: avoid; 
+	display: inline-block;  
+	padding: 10px 10px 1px 10px; 
+	margin: 5px; 
+	box-shadow: 0px 3px 2px -1px #c1bfbf; 
+	background: white;  
+	transition: all .2s ease;
+}
+
+.pin img {
+	width: 100%;
+	border-bottom: 1px solid gray;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+}
+
+.button {
+	width: 170px;
+	height: 30px;
+	background-color: #eceff0;
+	border: 1px solid #d5d5d5;
+	text-align: center;
+}
+
+.button a {
+	text-decoration: none;
+	vertical-align: bottom;
+	line-height: 29px;
+}
+
+.product_details {
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 300;
+	color: gray;
+	width: 300px;
+	margin-top: -10px;
+	float: right;
+	word-wrap:break-word;
+}
+
+.product_header {
+	font-family: "Open Sans";
+	font-size: 8px;
+	font-weight: 700;
+	color: gray;
+}
+
+#product_img_big {
+	margin-top: -10px;
+	width:250px;
+	padding: 0px;
+	float: left;
+}
+
+#cart {
+	font-family: "Open Sans";
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 25px;
+	color: gray;
+	width: 200px;
+	float: left;
+	margin-left: 25px;
+	top: -10px;
+	text-align: left;
+	position: fixed;
+	display: inline-block;
+}
+
+#chandelier {
+	top: 0px;
+	width: 200px;
+	z-index: -1;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+}
+
+.background {
+	background-image:url('/public/images/furley_bg.png');
+  background-repeat:repeat;
+	background-color: #eceff0;
+}
+
+#container {
+	margin: auto;
+	width: 1024px;
+}
+
+#logo {
+	background-color: #17b1ff;
+	text-align: center;
+	vertical-align: middle;
+	width: 401px;
+	height: 105px;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 40px;
+	box-shadow: 0px 3px 2px -1px #c1bfbf;
+}
+
+#brand_text {
+	font-family: "Open Sans";
+	color: white;
+	font-size: 25px;
+	line-height: 60px;
+	font-style: book;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-right:-0.3em;
+	letter-spacing:10px; 
+}
+
+.rule_thick {
+	background-color: white;
+	height: 2px;
+	width: 90%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.rule_thin {
+	background-color: gray;
+	height: 1px;
+	width: 90%;
+}
+
+#welcome {
+	background-color: #17b1ff;
+	text-align: center;
+	vertical-align: middle;
+	width: 192px;
+	height: 104px;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 457px;
+	box-shadow: 0px 3px 2px -1px #c1bfbf;
+}
+
+#welcome_msg {
+	font-family: "Open Sans";
+	color: white;
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 100px;
+	margin: auto;
+}
+
+table {
+	styletable-layout:fixed;
+	border-collapse: collapse;
+}
+
+#item {
+	width: 120px;
+}
+
+#new_product {
+	width: 200px;
+	height: 30px;
+	background-color: #2282b2;
+	border: 1px solid #1e6f98;
+	text-align: center;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+#new_product a {
+	color: white;
+	text-decoration: none;
+	line-height: 29px;
+}
+
+.new_plate {
+	float: left;
+	width: 580px;
+	height: 500px;
+	padding: 15px;
+	margin-left: 40px;
+	margin-top: 135px;
+	background-color: white;
+	box-shadow: 0px 3px 2px -1px #c1bfbf;
+}
+.product_new_title {
+	font-family: "Open Sans";
+	font-size: 16px;
+	color: gray;
+	margin-top: 0px;
+	margin-left: 5px;
+}
+
+.product_new_details {
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 300;
+	color: gray;
+	width: 300px;
+	margin-top: -10px;
+	border: px solid white;
+	float: left;
+	text-align: left;
+	background-color: white;
+}
+

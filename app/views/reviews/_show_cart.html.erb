@@ -1,0 +1,30 @@
+<div id="cart">
+	<div id="chandelier"><img src="/chandelier.png"/></div>
+	<table>
+		<tr>
+	  	<th>YOUR WISHLIST</th>
+	  </tr>
+	  <tr>
+	  	<td class="rule_thin"></td>
+	  	<td class="rule_thin"></td>
+	  </tr>
+	  <tr><td><p></td></tr>
+		<% @products_cart.each do |product| %>
+	  <tr>
+	    <td id="item"><%= product.name %></td>
+	    <td>$<%= product.price %></td>
+	  </tr>
+	  	<% end %>
+	   <tr><td><p></td></tr>
+	  <tr>
+	  	<td class="rule_thick" style="background-color:gray"></td>
+	  	<td class="rule_thick" style="background-color:gray"></td>
+	  </tr>	
+	  <tr>
+	  	
+	  </tr>
+	  <tr>
+	  	<th>TOTAL </th>
+	  </tr>
+	</table>
+</div>

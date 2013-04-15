@@ -1,0 +1,41 @@
+<div class="big_plate">
+	<p id="notice"><%= notice %></p>
+	<div id="product_img_big">
+	  <img src="<%= @product.image_url %>" width="250" alt="No picture found"/>
+	</div>
+
+	<div class="product_details">
+	  
+	  <div class="rule_thin"></div>
+	  <div class="product_header">NAME<br></div>
+	  <%= @product.name %>
+		<p>
+
+		<div class="rule_thin"></div>	
+		<div class="product_header">PRICE<br></div>
+		$<%= @product.price %>
+		</p>
+
+		<div class="rule_thin"></div>
+		<div class="product_header">DESCRIPTION<br></div>
+		<%= @product.description %>
+		</p>
+
+		<div class="rule_thin"></div>
+		<div class="product_header">YOUR NOTES &nbsp 
+			<a href="/reviews/new?id=<%= @product.id %>">(Add note)</a><br>
+		</div>
+	  <% @reviews_list.each do |r| %>
+		  "<%= r.body %>"<br>
+		  <p class="product_header">RATING: <%= r.rating %>
+		<br>
+		<% end %>
+		</p>
+
+		<%= link_to 'Edit product', edit_product_path(@product) %>  |  <%= link_to 'Back home', products_path %>
+	</div>
+</div>
+
+<div id="cart">
+	<%= render "show_cart"%>
+</div>

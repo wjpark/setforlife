@@ -1,0 +1,23 @@
+<div class="big_plate2">
+	<div id="columns">
+		<% @products.each do |product| %>
+		  <div class="pin">
+		  	<img src="<%= product.image_url%>" width="170px" alt="No image"><br>
+		    <%= product.name %><br>
+		    <%= product.price %><br>
+		    <p class="button"><%= link_to "Add to cart", product, method: :post %></p>
+		    <p class="button"><%= link_to 'Show', product %></p>
+		    <p class="button"><%= link_to 'Edit', edit_product_path(product) %></p>
+		    <p class="button"><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+		  </div>
+		<% end %>
+
+		<div id="new_product">
+			<%= link_to 'New Product', new_product_path %>
+		</div>
+	</div>
+</div>
+
+<div>
+	<%= render "show_cart"%>
+</div>
